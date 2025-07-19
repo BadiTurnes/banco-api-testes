@@ -5,11 +5,11 @@ O projeto Banco API Testes tem como objetivo realizar a automação de testes pa
 ## 🛠️ Stack Utilizada
 O projeto utiliza as seguintes tecnologias e bibliotecas:
 - JavaScript: Linguagem de programação para escrita dos testes.
-- Mocha: Framework de testes para estruturar e executar os casos de teste (https://mochajs.org/).
-- Supertest: Biblioteca para testar endpoints HTTP da API (https://github.com/visionmedia/supertest).
-- Chai: Biblioteca de asserções para validação dos resultados dos testes (https://www.chaijs.com/).
-- Mochawesome: Gerador de relatórios de teste em formato HTML (https://github.com/adamgruber/mochawesome).
-- Dotenv: Biblioteca para carregar variáveis de ambiente a partir do arquivo .env (https://github.com/motdotla/dotenv).
+- Mocha: Framework de testes para estruturar e executar os casos de teste.
+- Supertest: Biblioteca para testar endpoints HTTP da API.
+- Chai: Biblioteca de asserções para validação dos resultados dos testes.
+- Mochawesome: Gerador de relatórios de teste em formato HTML.
+- Dotenv: Biblioteca para carregar variáveis de ambiente a partir do arquivo .env.
 
 Consulte o arquivo package.json para a lista completa de dependências e suas versões.
 
@@ -36,55 +36,55 @@ banco-api-testes/
 O arquivo .env deve ser criado na raiz do projeto para configurar a URL base da API a ser testada.
 Ele não é versionado no repositório por motivos de segurança e flexibilidade.
 O formato do arquivo é o seguinte:
+```
 BASE_URL=http://localhost:3000
-
+```
 BASE_URL: Define a URL base da API que será testada (exemplo: http://localhost:3000 para um ambiente local).
 Substitua pelo endereço correto da API em seu ambiente.
 
 ## Para criar o arquivo, siga os passos:
 
-Crie um arquivo chamado .env na raiz do projeto.
+-Crie um arquivo chamado .env na raiz do projeto.
 Adicione a variável BASE_URL com o valor correspondente à URL da API.
 
-Comandos para Execução de Testes e Geração de Relatórios
+-Comandos para Execução de Testes e Geração de Relatórios
 Para executar os testes e gerar relatórios, siga os passos abaixo:
 
-## Clone o repositório:
+-- Clone o repositório:
 git clone https://github.com/BadiTurnes/banco-api-testes.git
 cd banco-api-testes
 
 
-## Instale as dependências:
+-- Instale as dependências:
 ```
 npm install
 ```
-Crie o arquivo .env:Crie o arquivo .env na raiz do projeto com o formato descrito acima.
+-- Crie o arquivo .env:Crie o arquivo .env na raiz do projeto com o formato descrito acima.
 
-Execute os testes:
+-- Execute os testes:
 ```
 npm test
 ```
-
 Este comando executa todos os testes utilizando o Mocha e exibe os resultados no terminal.
 
-Gere o relatório HTML com Mochawesome:
+-- Gere o relatório HTML com Mochawesome:
 ```
 npm run test:report
 ```
 Este comando executa os testes e gera um relatório em HTML no diretório mochawesome-report/. O arquivo principal será mochawesome-report/mochawesome.html.
 
-Limpe o diretório de relatórios (opcional):Caso queira remover relatórios antigos antes de gerar novos:
+-- Limpe o diretório de relatórios (opcional):Caso queira remover relatórios antigos antes de gerar novos:
 ```
 npm run clean
 ```
 Nota: Certifique-se de que a API do projeto banco-api esteja em execução e acessível na URL configurada no .env antes de rodar os testes.
-Links para Documentação das Dependências
 
-- Mocha: Framework de testes utilizado para estruturar e executar os testes.
-- Supertest: Biblioteca para testar requisições HTTP.
-- Chai: Biblioteca de asserções para validação dos resultados.
-- Mochawesome: Gerador de relatórios de teste em HTML.
-- Dotenv: Biblioteca para gerenciamento de variáveis de ambiente.
+-- Links para Documentação das Dependências
+- Mocha: (https://mochajs.org/).
+- Supertest: (https://github.com/visionmedia/supertest).
+- Chai: B(https://www.chaijs.com/).
+- Mochawesome: (https://github.com/adamgruber/mochawesome).
+- Dotenv: (https://github.com/motdotla/dotenv).
 
 ## Contribuições
 Contribuições são bem-vindas! Para contribuir:
