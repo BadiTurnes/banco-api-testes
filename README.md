@@ -1,20 +1,21 @@
 # 🧪 banco-api-testes
-Objetivo
+## 🎯 Objetivo
 O projeto Banco API Testes tem como objetivo realizar a automação de testes para a API REST do projeto banco-api, desenvolvido como parte da Mentoria de Testes 2.0, Módulo 4: Testando e Automatizando Testes de API. Este repositório contém testes automatizados escritos em JavaScript, utilizando bibliotecas como Mocha, Supertest e Chai para validar o comportamento da API, garantindo sua funcionalidade, confiabilidade e conformidade com os requisitos especificados.
-Stack Utilizada
+## 🛠️ Stack Utilizada
 O projeto utiliza as seguintes tecnologias e bibliotecas:
 
-JavaScript: Linguagem de programação para escrita dos testes.
-Mocha: Framework de testes para estruturar e executar os casos de teste (https://mochajs.org/).
-Supertest: Biblioteca para testar endpoints HTTP da API (https://github.com/visionmedia/supertest).
-Chai: Biblioteca de asserções para validação dos resultados dos testes (https://www.chaijs.com/).
-Mochawesome: Gerador de relatórios de teste em formato HTML (https://github.com/adamgruber/mochawesome).
-Dotenv: Biblioteca para carregar variáveis de ambiente a partir do arquivo .env (https://github.com/motdotla/dotenv).
+- JavaScript: Linguagem de programação para escrita dos testes.
+- Mocha: Framework de testes para estruturar e executar os casos de teste (https://mochajs.org/).
+- Supertest: Biblioteca para testar endpoints HTTP da API (https://github.com/visionmedia/supertest).
+- Chai: Biblioteca de asserções para validação dos resultados dos testes (https://www.chaijs.com/).
+- Mochawesome: Gerador de relatórios de teste em formato HTML (https://github.com/adamgruber/mochawesome).
+- Dotenv: Biblioteca para carregar variáveis de ambiente a partir do arquivo .env (https://github.com/motdotla/dotenv).
 
 Consulte o arquivo package.json para a lista completa de dependências e suas versões.
 
 ## 📁 Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
+
 banco-api-testes/
 .
 ├── fixtures/
@@ -31,7 +32,7 @@ banco-api-testes/
 ├── package.json
 └── README.md
 
-Formato do Arquivo .env
+## Formato do Arquivo .env
 O arquivo .env deve ser criado na raiz do projeto para configurar a URL base da API a ser testada. Ele não é versionado no repositório por motivos de segurança e flexibilidade. O formato do arquivo é o seguinte:
 BASE_URL=http://localhost:3000
 
@@ -51,7 +52,7 @@ git clone https://github.com/BadiTurnes/banco-api-testes.git
 cd banco-api-testes
 
 
-Instale as dependências:
+## Instale as dependências:
 npm install
 
 
@@ -73,16 +74,16 @@ npm run clean
 Nota: Certifique-se de que a API do projeto banco-api esteja em execução e acessível na URL configurada no .env antes de rodar os testes.
 Links para Documentação das Dependências
 
-Mocha: Framework de testes utilizado para estruturar e executar os testes.
-Supertest: Biblioteca para testar requisições HTTP.
-Chai: Biblioteca de asserções para validação dos resultados.
-Mochawesome: Gerador de relatórios de teste em HTML.
-Dotenv: Biblioteca para gerenciamento de variáveis de ambiente.
+- Mocha: Framework de testes utilizado para estruturar e executar os testes.
+- Supertest: Biblioteca para testar requisições HTTP.
+- Chai: Biblioteca de asserções para validação dos resultados.
+- Mochawesome: Gerador de relatórios de teste em HTML.
+- Dotenv: Biblioteca para gerenciamento de variáveis de ambiente.
 
-Contribuições
+## Contribuições
 Contribuições são bem-vindas! Para contribuir:
 
-Faça um fork do repositório.
+## Faça um fork do repositório.
 Crie uma branch para sua feature ou correção (git checkout -b minha-feature).
 Commit suas alterações (git commit -m 'Adiciona minha feature').
 Envie para o repositório remoto (git push origin minha-feature).
