@@ -1,9 +1,10 @@
-//const request = require('supertest') //--o que o Julio falou para colocar não funcionou
-//const { expect } = require('chai')
-import request from 'supertest'
-import { expect } from 'chai'
-import 'dotenv/config'
-//require('dotenv').config()
+//import request from 'supertest'
+//import { expect } from 'chai'
+//import 'dotenv/config'
+
+const request = require('supertest') //--o que o Julio falou para colocar não funcionou com chai5
+const { expect } = require('chai')
+require('dotenv').config()
 
 describe('Login', () => {
     describe('POST /login', () => {

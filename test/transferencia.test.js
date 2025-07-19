@@ -1,23 +1,19 @@
-import { describe } from "mocha";
-//const request = require('supertest'); //--o que o Julio falou para colocar não funcionou
-//const { expect } = require('chai')
-import request from 'supertest'
-import { expect } from 'chai'
-//require('dotenv').config()
-import 'dotenv/config'
+//import { describe } from "mocha";
+//import request from 'supertest'
+//import { expect } from 'chai'
+//import 'dotenv/config'
+//import { obterToken } from '../helpers/autenticacao'
+
+const request = require('supertest'); //--o que o Julio falou para colocar não funcionou com chai5
+const { expect } = require('chai')
+require('dotenv').config()
+const { obterToken } = require('../helpers/autenticacao')
+
 
 describe('Transferencias', () => {
     describe('POST /transferencias', () => {
-        it('Deve retornar sucesso com 201 quando o valor da transferencia for igual ou acima de R$10 reais', async () =>{
-            const respostaLogin = await request(process.env.BASE_URL)
-                .post('/login')
-                .set('Content-Type', 'application/json')
-                .send({
-                    'username': 'julio.lima',
-                    'senha': '123456'
-                })
-
-            const token = respostaLogin.body.token
+        it('Deve retornar sucesso com 201 quando o valor da transferencia for igual ou acima de R$10 reais', async () => {
+           const token = await obterToken('julio.lima', '123456')
 
             const resposta = await request(process.env.BASE_URL)
                 .post('/transferencias')
@@ -34,16 +30,8 @@ describe('Transferencias', () => {
             //console.log(resposta.body)
         })
 
-        it('Deve retornar sucesso com 422 quando o valor da transferencia for abaixo de R$10 reais', async () =>{
-            const respostaLogin = await request(process.env.BASE_URL)
-                .post('/login')
-                .set('Content-Type', 'application/json')
-                .send({
-                    'username': 'julio.lima',
-                    'senha': '123456'
-                })
-
-            const token = respostaLogin.body.token
+        it('Deve retornar sucesso com 422 quando o valor da transferencia for abaixo de R$10 reais', async () => {
+            const token = await obterToken('julio.lima', '123456')
 
             const resposta = await request(process.env.BASE_URL)
                 .post('/transferencias')
