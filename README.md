@@ -1,4 +1,4 @@
-Banco API Testes
+# 🧪 banco-api-testes
 Objetivo
 O projeto Banco API Testes tem como objetivo realizar a automação de testes para a API REST do projeto banco-api, desenvolvido como parte da Mentoria de Testes 2.0, Módulo 4: Testando e Automatizando Testes de API. Este repositório contém testes automatizados escritos em JavaScript, utilizando bibliotecas como Mocha, Supertest e Chai para validar o comportamento da API, garantindo sua funcionalidade, confiabilidade e conformidade com os requisitos especificados.
 Stack Utilizada
